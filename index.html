@@ -2,13 +2,12 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>路锦程 - 环境设计作品集</title>
+    <meta name="viewport" 内容="width=device-width, initial-scale=1.0">
+    <标题>路锦程 - 环境设计作品集</标题>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- 导航栏 -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="logo">路锦程</div>
@@ -21,27 +20,23 @@
         </div>
     </nav>
 
-    <!-- 首页 -->
     <section id="home" class="hero">
-        <div class="hero-content">
-            <h1 class="hero-title">海丝文化 × 苔藓微景观</h1>
-            <p class="hero-subtitle">环境设计 | 空间设计 | 文创设计</p>
+        <div class="hero-内容">
+            <h1 class="hero-标题">海丝文化 × 苔藓微景观</h1>
+            <p class="hero-sub标题">环境设计 | 空间设计 | 文创设计</p>
             <p class="hero-desc">温州大学美术与设计学院 · 环境设计专业</p>
             <a href="#projects" class="cta-button">查看作品</a>
         </div>
     </section>
 
-    <!-- 关于我 -->
     <section id="about" class="about">
         <div class="container">
-            <h2 class="section-title">关于我</h2>
-            <div class="about-content">
+            <h2 class="section-标题">关于我</h2>
+            <div class="about-内容">
                 <div class="about-text">
                     <h3>路锦程</h3>
                     <p class="about-role">环境设计师 / 空间设计研究者</p>
-                    <p class="about-desc">
-                        专注于将传统文化与现代空间设计相融合，探索生态美学与人文关怀的设计表达。
-                    </p>
+                    <p class="about-desc">专注于将传统文化与现代空间设计相融合，探索生态美学与人文关怀的设计表达。</p>
                     <div class="skills">
                         <span class="skill-tag">空间设计</span>
                         <span class="skill-tag">文创设计</span>
@@ -50,29 +45,18 @@
                     </div>
                 </div>
                 <div class="about-stats">
-                    <div class="stat-item">
-                        <span class="stat-number">4</span>
-                        <span class="stat-label">作品分类</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number">10+</span>
-                        <span class="stat-label">设计项目</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number">1</span>
-                        <span class="stat-label">原创IP</span>
-                    </div>
+                    <div class="stat-item"><span class="stat-number">4</span><span class="stat-label">作品分类</span></div>
+                    <div class="stat-item"><span class="stat-number">10+</span><span class="stat-label">设计项目</span></div>
+                    <div class="stat-item"><span class="stat-number">1</span><span class="stat-label">原创IP</span></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 作品展示 -->
     <section id="projects" class="projects">
         <div class="container">
-            <h2 class="section-title">作品展示</h2>
+            <h2 class="section-标题">作品展示</h2>
             
-            <!-- 分类筛选按钮 -->
             <div class="filter-buttons">
                 <button class="filter-btn active" data-filter="all">全部作品</button>
                 <button class="filter-btn" data-filter="graduation">毕业设计</button>
@@ -81,124 +65,187 @@
                 <button class="filter-btn" data-filter="model">模型/效果图</button>
             </div>
 
-            <!-- 作品网格 -->
             <div class="projects-grid">
-                <!-- 毕业设计主项目 -->
+                <!-- 毕业设计 -->
                 <div class="project-card" data-category="graduation">
-                    <div class="card-image">
-                        <div class="image-placeholder graduation-bg">
-                            <span>🏛️ 毕业设计</span>
-                        </div>
-                    </div>
+                    <div class="card-image"><div class="image-placeholder graduation-bg"><span>毕业设计</span></div></div>
                     <div class="card-info">
                         <span class="card-category">毕业设计</span>
                         <h4>海丝文化视角下山根苔藓微景观空间设计</h4>
-                        <p>温州山根村500㎡文创空间设计，融合海丝文化与苔藓生态</p>
+                        <p>温州山根村500㎡文创空间设计</p>
                         <button class="view-btn" onclick="showDetail('thesis')">查看详情</button>
                     </div>
                 </div>
 
-                <!-- 空间设计 - 一楼 -->
+                <!-- 空间设计 -->
                 <div class="project-card" data-category="space">
-                    <div class="card-image">
-                        <div class="image-placeholder space-bg">
-                            <span>1F 海丝启航</span>
-                        </div>
-                    </div>
+                    <div class="card-image"><div class="image-placeholder space-bg"><span>1F 海丝启航</span></div></div>
                     <div class="card-info">
                         <span class="card-category">空间设计</span>
                         <h4>一楼 · 海丝文化传播中心</h4>
-                        <p>接待入口、吧台区、天井生态池设计</p>
+                        <p>接待入口、吧台区、天井生态池</p>
                         <button class="view-btn" onclick="showDetail('floor1')">查看详情</button>
                     </div>
                 </div>
 
-                <!-- 空间设计 - 二楼 -->
                 <div class="project-card" data-category="space">
-                    <div class="card-image">
-                        <div class="image-placeholder space-bg">
-                            <span>2F 商贸情境</span>
-                        </div>
-                    </div>
+                    <div class="card-image"><div class="image-placeholder space-bg"><span>2F 商贸情境</span></div></div>
                     <div class="card-info">
                         <span class="card-category">空间设计</span>
                         <h4>二楼 · 海上商贸情境再现区</h4>
-                        <p>手工创作区、实验室、研讨室设计</p>
+                        <p>手工创作区、实验室、研讨室</p>
                         <button class="view-btn" onclick="showDetail('floor2')">查看详情</button>
                     </div>
                 </div>
 
-                <!-- 空间设计 - 三楼 -->
                 <div class="project-card" data-category="space">
-                    <div class="card-image">
-                        <div class="image-placeholder space-bg">
-                            <span>3F 生态打卡</span>
-                        </div>
-                    </div>
+                    <div class="card-image"><div class="image-placeholder space-bg"><span>3F 生态打卡</span></div></div>
                     <div class="card-info">
                         <span class="card-category">空间设计</span>
                         <h4>三楼 · 海洋生态变迁打卡区</h4>
-                        <p>艺术展示区、网红互动体验设计</p>
+                        <p>艺术展示区、网红互动体验</p>
                         <button class="view-btn" onclick="showDetail('floor3')">查看详情</button>
                     </div>
                 </div>
 
-                <!-- 文创/IP -->
+                <!-- IP形象 - 12张图片 -->
                 <div class="project-card" data-category="cultural">
-                    <div class="card-image">
-                        <div class="image-placeholder cultural-bg">
-                            <span>🐸 IP形象</span>
-                        </div>
-                    </div>
+                    <div class="card-image"><img src="images/ip-1.png" alt="IP主视觉" class="card-img"></div>
                     <div class="card-info">
                         <span class="card-category">文创/IP</span>
-                        <h4>海丝苔藓IP形象设计</h4>
-                        <p>品牌视觉识别与周边产品设计</p>
+                        <h4>海丝苔藓IP - 主视觉</h4>
+                        <p>青蛙与云朵融合，体现生态与亲和力</p>
                         <button class="view-btn" onclick="showDetail('ip')">查看详情</button>
                     </div>
                 </div>
 
-                <!-- 文创/色彩 -->
                 <div class="project-card" data-category="cultural">
-                    <div class="card-image">
-                        <div class="image-placeholder cultural-bg">
-                            <span>🎨 色彩材质</span>
-                        </div>
-                    </div>
+                    <div class="card-image"><img src="images/ip-2.png" alt="IP表情" class="card-img"></div>
                     <div class="card-info">
                         <span class="card-category">文创/IP</span>
-                        <h4>空间色彩与材质系统</h4>
-                        <p>青灰、深绿、赭石三色文化配色方案</p>
-                        <button class="view-btn" onclick="showDetail('color')">查看详情</button>
+                        <h4>IP表情包 - 开心</h4>
+                        <p>品牌视觉识别系统延展</p>
+                        <button class="view-btn" onclick="showDetail('ip2')">查看详情</button>
                     </div>
                 </div>
 
-                <!-- 模型 - 实体模型 -->
-                <div class="project-card" data-category="model">
-                    <div class="card-image">
-                        <div class="image-placeholder model-bg">
-                            <span>📐 实体模型</span>
-                        </div>
+                <div class="project-card" data-category="cultural">
+                    <div class="card-image"><img src="images/ip-3.png" alt="IP表情" class="card-img"></div>
+                    <div class="card-info">
+                        <span class="card-category">文创/IP</span>
+                        <h4>IP表情包 - 惊喜</h4>
+                        <p>多表情延展设计</p>
+                        <button class="view-btn" onclick="showDetail('ip3')">查看详情</button>
                     </div>
+                </div>
+
+                <div class="project-card" data-category="cultural">
+                    <div class="card-image"><img src="images/ip-4.png" alt="IP表情" class="card-img"></div>
+                    <div class="card-info">
+                        <span class="card-category">文创/IP</span>
+                        <h4>IP表情包 - 思考</h4>
+                        <p>品牌人格化表达</p>
+                        <button class="view-btn" onclick="showDetail('ip4')">查看详情</button>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="cultural">
+                    <div class="card-image"><img src="images/ip-5.png" alt="IP表情" class="card-img"></div>
+                    <div class="card-info">
+                        <span class="card-category">文创/IP</span>
+                        <h4>IP表情包 - 5</h4>
+                        <p>品牌视觉延展</p>
+                        <button class="view-btn" onclick="showDetail('ip5')">查看详情</button>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="cultural">
+                    <div class="card-image"><img src="images/ip-6.png" alt="IP表情" class="card-img"></div>
+                    <div class="card-info">
+                        <span class="card-category">文创/IP</span>
+                        <h4>IP表情包 - 6</h4>
+                        <p>品牌视觉延展</p>
+                        <button class="view-btn" onclick="showDetail('ip6')">查看详情</button>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="cultural">
+                    <div class="card-image"><img src="images/ip-7.png" alt="IP表情" class="card-img"></div>
+                    <div class="card-info">
+                        <span class="card-category">文创/IP</span>
+                        <h4>IP表情包 - 7</h4>
+                        <p>品牌视觉延展</p>
+                        <button class="view-btn" onclick="showDetail('ip7')">查看详情</button>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="cultural">
+                    <div class="card-image"><img src="images/ip-8.png" alt="IP表情" class="card-img"></div>
+                    <div class="card-info">
+                        <span class="card-category">文创/IP</span>
+                        <h4>IP表情包 - 8</h4>
+                        <p>品牌视觉延展</p>
+                        <button class="view-btn" onclick="showDetail('ip8')">查看详情</button>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="cultural">
+                    <div class="card-image"><img src="images/ip-9.png" alt="IP表情" class="card-img"></div>
+                    <div class="card-info">
+                        <span class="card-category">文创/IP</span>
+                        <h4>IP表情包 - 9</h4>
+                        <p>品牌视觉延展</p>
+                        <button class="view-btn" onclick="showDetail('ip9')">查看详情</button>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="cultural">
+                    <div class="card-image"><img src="images/ip-10.png" alt="IP表情" class="card-img"></div>
+                    <div class="card-info">
+                        <span class="card-category">文创/IP</span>
+                        <h4>IP表情包 - 10</h4>
+                        <p>品牌视觉延展</p>
+                        <button class="view-btn" onclick="showDetail('ip10')">查看详情</button>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="cultural">
+                    <div class="card-image"><img src="images/ip-11.png" alt="IP表情" class="card-img"></div>
+                    <div class="card-info">
+                        <span class="card-category">文创/IP</span>
+                        <h4>IP表情包 - 11</h4>
+                        <p>品牌视觉延展</p>
+                        <button class="view-btn" onclick="showDetail('ip11')">查看详情</button>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="cultural">
+                    <div class="card-image"><img src="images/ip-12.png" alt="IP表情" class="card-img"></div>
+                    <div class="card-info">
+                        <span class="card-category">文创/IP</span>
+                        <h4>IP表情包 - 12</h4>
+                        <p>品牌视觉延展</p>
+                        <button class="view-btn" onclick="showDetail('ip12')">查看详情</button>
+                    </div>
+                </div>
+
+                <!-- 模型/效果图 -->
+                <div class="project-card" data-category="model">
+                    <div class="card-image"><div class="image-placeholder model-bg"><span>实体模型</span></div></div>
                     <div class="card-info">
                         <span class="card-category">模型/效果图</span>
                         <h4>1:20实体模型制作</h4>
-                        <p>木质结构、陶土砖片、苔藓植被层</p>
-                        <button class="view-btn" onclick="showDetail('physical')">查看详情</button>
+                        <p>木质结构、陶土砖片、苔藓植被</p>
+                        <button class="view-btn" onclick="showDetail('model')">查看详情</button>
                     </div>
                 </div>
 
-                <!-- 模型 - 效果图 -->
                 <div class="project-card" data-category="model">
-                    <div class="card-image">
-                        <div class="image-placeholder model-bg">
-                            <span>🖼️ 效果图</span>
-                        </div>
-                    </div>
+                    <div class="card-image"><div class="image-placeholder model-bg"><span>效果图</span></div></div>
                     <div class="card-info">
                         <span class="card-category">模型/效果图</span>
                         <h4>空间效果图渲染</h4>
-                        <p>前厅、客座区、手工区、展览区效果</p>
+                        <p>前厅、客座区、手工区、展览区</p>
                         <button class="view-btn" onclick="showDetail('render')">查看详情</button>
                     </div>
                 </div>
@@ -206,39 +253,27 @@
         </div>
     </section>
 
-    <!-- 联系方式 -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2 class="section-title">联系我</h2>
-            <div class="contact-content">
-                <div class="contact-item">
-                    <span class="contact-icon">📧</span>
-                    <span>22210900223@wzu.edu.cn</span>
-                </div>
-                <div class="contact-item">
-                    <span class="contact-icon">📍</span>
-                    <span>温州大学美术与设计学院</span>
-                </div>
-                <div class="contact-item">
-                    <span class="contact-icon">🎓</span>
-                    <span>22环设 · 环境设计专业</span>
-                </div>
+            <h2 class="section-标题">联系我</h2>
+            <div class="contact-内容">
+                <div class="contact-item"><span class="contact-icon">📧</span><span>22210900223@wzu.edu.cn</span></div>
+                <div class="contact-item"><span class="contact-icon">📍</span><span>温州大学美术与设计学院</span></div>
+                <div class="contact-item"><span class="contact-icon">🎓</span><span>22环设 · 环境设计专业</span></div>
             </div>
         </div>
     </section>
 
-    <!-- 页脚 -->
     <footer class="footer">
         <div class="container">
             <p>© 2026 路锦程 · 环境设计作品集</p>
         </div>
     </footer>
 
-    <!-- 详情弹窗 -->
-    <div id="detailModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeDetail()">&times;</span>
-            <div id="modalBody"></div>
+    <div id="modal" class="modal">
+        <div class="modal-内容">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <div id="modal-body"></div>
         </div>
     </div>
 
