@@ -1,0 +1,478 @@
+/* 基础样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #2D5A4A;
+    --primary-light: #4A7C6F;
+    --secondary: #8B7355;
+    --accent: #5A7A8A;
+    --bg-light: #F5F3F0;
+    --text-dark: #2C2C2C;
+    --text-light: #666;
+    --white: #FFFFFF;
+}
+
+body {
+    font-family: 'Noto Sans SC', sans-serif;
+    line-height: 1.6;
+    color: var(--text-dark);
+    background: var(--bg-light);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* 导航栏 */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.05);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--text-dark);
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: var(--primary);
+}
+
+/* Hero */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 100px 20px 50px;
+    background: linear-gradient(135deg, var(--bg-light) 0%, var(--white) 100%);
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 20px;
+}
+
+.hero-subtitle {
+    font-size: 1.3rem;
+    color: var(--secondary);
+    margin-bottom: 15px;
+}
+
+.hero-desc {
+    font-size: 1rem;
+    color: var(--text-light);
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 40px;
+    background: var(--primary);
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(45, 90, 74, 0.3);
+}
+
+/* 关于我 */
+.about {
+    padding: 100px 0;
+    background: var(--white);
+}
+
+.section-title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 60px;
+    color: var(--text-dark);
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.about-text h3 {
+    font-size: 2rem;
+    color: var(--primary);
+    margin-bottom: 10px;
+}
+
+.about-role {
+    color: var(--secondary);
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.about-desc {
+    color: var(--text-light);
+    line-height: 1.8;
+}
+
+.skills {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.skill-tag {
+    padding: 8px 20px;
+    background: var(--bg-light);
+    border: 1px solid var(--primary);
+    border-radius: 20px;
+    color: var(--primary);
+    font-size: 0.9rem;
+}
+
+.about-stats {
+    display: grid;
+    gap: 20px;
+}
+
+.stat-item {
+    text-align: center;
+    padding: 30px;
+    background: var(--bg-light);
+    border-radius: 15px;
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary);
+    display: block;
+}
+
+.stat-label {
+    color: var(--text-light);
+}
+
+/* 作品展示 */
+.projects {
+    padding: 100px 0;
+    background: var(--bg-light);
+}
+
+/* 分类筛选按钮 */
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 12px 30px;
+    border: 2px solid var(--primary);
+    background: transparent;
+    color: var(--primary);
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background: var(--primary);
+    color: var(--white);
+}
+
+/* 作品网格 */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.project-card {
+    background: var(--white);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    transition: all 0.3s;
+    opacity: 1;
+    transform: scale(1);
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+.project-card.hidden {
+    display: none;
+}
+
+.card-image {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.image-placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+/* 不同分类的背景色 */
+.graduation-bg {
+    background: linear-gradient(135deg, #2D5A4A 0%, #4A7C6F 100%);
+}
+
+.space-bg {
+    background: linear-gradient(135deg, #5A7A8A 0%, #7A9AAA 100%);
+}
+
+.cultural-bg {
+    background: linear-gradient(135deg, #8B7355 0%, #AB9375 100%);
+}
+
+.model-bg {
+    background: linear-gradient(135deg, #6B8E6B 0%, #8BAE8B 100%);
+}
+
+.card-info {
+    padding: 25px;
+}
+
+.card-category {
+    display: inline-block;
+    padding: 5px 15px;
+    background: var(--bg-light);
+    border-radius: 15px;
+    font-size: 0.8rem;
+    color: var(--primary);
+    margin-bottom: 15px;
+}
+
+.card-info h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: var(--text-dark);
+}
+
+.card-info p {
+    color: var(--text-light);
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+}
+
+.view-btn {
+    padding: 10px 25px;
+    background: var(--primary);
+    color: var(--white);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.3s;
+}
+
+.view-btn:hover {
+    background: var(--primary-light);
+    transform: scale(1.05);
+}
+
+/* 联系方式 */
+.contact {
+    padding: 100px 0;
+    background: var(--white);
+    text-align: center;
+}
+
+.contact-content {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.1rem;
+}
+
+.contact-icon {
+    font-size: 1.5rem;
+}
+
+/* 页脚 */
+.footer {
+    padding: 40px 0;
+    background: var(--text-dark);
+    color: var(--white);
+    text-align: center;
+}
+
+/* 弹窗 */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    overflow-y: auto;
+}
+
+.modal-content {
+    background: var(--white);
+    margin: 5% auto;
+    padding: 40px;
+    width: 90%;
+    max-width: 700px;
+    border-radius: 20px;
+    position: relative;
+    animation: modalSlide 0.3s ease;
+}
+
+@keyframes modalSlide {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--text-light);
+    transition: color 0.3s;
+}
+
+.close:hover {
+    color: var(--text-dark);
+}
+
+#modalBody h2 {
+    color: var(--primary);
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+#modalBody h3 {
+    color: var(--secondary);
+    margin: 25px 0 15px;
+    font-size: 1.3rem;
+}
+
+#modalBody h4 {
+    color: var(--primary);
+    margin: 20px 0 10px;
+}
+
+#modalBody p {
+    line-height: 1.8;
+    color: var(--text-light);
+    margin-bottom: 10px;
+}
+
+#modalBody ul {
+    margin-left: 20px;
+    color: var(--text-light);
+}
+
+#modalBody li {
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+#modalBody strong {
+    color: var(--text-dark);
+}
+
+/* 响应式 */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .filter-buttons {
+        gap: 10px;
+    }
+    
+    .filter-btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+    
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
