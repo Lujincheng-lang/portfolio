@@ -84,10 +84,14 @@ body {
 }
 
 .hero-title {
+    .hero-标题 {
     font-size: 3rem;
     font-weight: 700;
-    color: var(--primary);
+    color: #fff;
     margin-bottom: 20px;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+}
+
 }
 
 .hero-subtitle {
